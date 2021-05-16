@@ -1,0 +1,383 @@
+3import board
+import neopixel
+import time
+
+
+def sendToDisplay(Speed):
+
+    pixels = neopixel.NeoPixel(board.D18, 86, auto_write=False)
+    Limit = 30
+    RED = (255, 0, 0)
+    GREEN = (0, 255, 0)
+    AMBER = (255, 110, 0)
+    BLUE = (0, 0, 255)
+
+    number = Speed
+    print(number)
+    if number == Limit:
+        color = AMBER
+    elif number < Limit:
+        color = GREEN
+    else:
+        color = RED
+
+    num1 = number % 10
+    num2 = number / 10
+    num2 = int(num2)
+
+    def A():
+
+
+        pixels[0] = color
+        pixels[1] = color
+        pixels[2] = color
+        pixels[3] = color
+        pixels[4] = color
+        pixels[5] = color
+        pixels.show()
+        return
+
+    def B():
+
+        pixels[6] = color
+        pixels[7] = color
+        pixels[8] = color
+        pixels[9] = color
+        pixels[10] = color
+        pixels[11] = color
+        pixels.show()
+        return
+
+    def C():
+
+        pixels[12] = color
+        pixels[13] = color
+        pixels[14] = color
+        pixels[15] = color
+        pixels[16] = color
+        pixels[17] = color
+        pixels.show()
+        return
+
+    def D():
+
+        pixels[18] = color
+        pixels[19] = color
+        pixels[20] = color
+        pixels[21] = color
+        pixels[22] = color
+        pixels[23] = color
+        pixels.show()
+        return
+
+    def E():
+
+        pixels[24] = color
+        pixels[25] = color
+        pixels[26] = color
+        pixels[27] = color
+        pixels[28] = color
+        pixels[29] = color
+        pixels.show()
+        return
+
+    def F():
+
+        pixels[30] = color
+        pixels[31] = color
+        pixels[32] = color
+        pixels[33] = color
+        pixels[34] = color
+        pixels[35] = color
+        pixels.show()
+        return
+
+    def G():
+
+        pixels[36] = color
+        pixels[37] = color
+        pixels[38] = color
+        pixels[39] = color
+        pixels[40] = color
+        pixels[41] = color
+        pixels.show()
+        return
+
+    def A1():
+
+        pixels[42] = color
+        pixels[43] = color
+        pixels[44] = color
+        pixels[45] = color
+        pixels[46] = color
+        pixels[47] = color
+        pixels.show()
+        return
+
+    def B1():
+
+        pixels[48] = color
+        pixels[49] = color
+        pixels[50] = color
+        pixels[51] = color
+        pixels[52] = color
+        pixels[53] = color
+        pixels.show()
+        return
+
+    def C1():
+
+        pixels[54] = color
+        pixels[55] = color
+        pixels[56] = color
+        pixels[57] = color
+        pixels[58] = color
+        pixels[59] = color
+        pixels.show()
+        return
+
+    def D1():
+
+        pixels[60] = color
+        pixels[61] = color
+        pixels[62] = color
+        pixels[63] = color
+        pixels[64] = color
+        pixels[65] = color
+        pixels.show()
+        return
+
+    def E1():
+
+        pixels[66] = color
+        pixels[67] = color
+        pixels[68] = color
+        pixels[69] = color
+        pixels[70] = color
+        pixels[71] = color
+        pixels.show()
+        return
+
+    def F1():
+
+        pixels[72] = color
+        pixels[73] = color
+        pixels[74] = color
+        pixels[75] = color
+        pixels[76] = color
+        pixels[77] = color
+        pixels.show()
+        return
+
+    def G1():
+
+        pixels[78] = color
+        pixels[79] = color
+        pixels[80] = color
+        pixels[81] = color
+        pixels[82] = color
+        pixels[83] = color
+        pixels.show()
+        return
+
+    if num1 == 0:
+
+        A1()
+        B1()
+        C1()
+        D1()
+        E1()
+        F1()
+        for pixels in range(78, 83):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 1:
+
+        C1()
+        D1()
+        for pixels in range(42, 53):
+            pixels.fill(0, 0, 0)
+        for pixels in range(66, 83):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 2:
+        B1()
+        C1()
+        E1()
+        F1()
+        G1()
+        for pixels in range(42, 47):
+            pixels.fill(0, 0, 0)
+        for pixels in range(60, 65):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 3:
+        B1()
+        C1()
+        D1()
+        E1()
+        G1()
+        for pixels in range(42, 47):
+            pixels.fill((0, 0, 0))
+        for pixels in range(72, 77):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 4:
+        A1()
+        C1()
+        D1()
+        G1()
+        for pixels in range(48, 53):
+            pixels.fill(0, 0, 0)
+        for pixels in range(66, 77):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 5:
+        A1()
+        B1()
+        D1()
+        E1()
+        G1()
+        for pixels in range(54, 89):
+            pixels.fill(0, 0, 0)
+        for pixels in range(72, 77):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 6:
+        A1()
+        B1()
+        D1()
+        E1()
+        F1()
+        G1()
+        for pixels in range(54, 59):
+            pixels.fill(0, 0, 0)
+
+    if num1 == 7:
+        B1()
+        C1()
+        D1()
+        for pixels in range(42, 47):
+            pixels.fill(0, 0, 0)
+        for pixels in range(66, 83):
+            pixels.fill(0, 0, 0)
+    if num1 == 8:
+        A1()
+        B1()
+        C1()
+        D1()
+        E1()
+        F1()
+        G1()
+
+    if num1 == 9:
+        A1()
+        B1()
+        C1()
+        D1()
+        E1()
+        G1()
+        for pixels in range(72, 77):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 0:
+        A()
+        B()
+        C()
+        D()
+        E()
+        F()
+        for pixels in range(36, 41):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 1:
+        C()
+        D()
+        for pixels in range(0, 11):
+            pixels.fill(0, 0, 0)
+        for pixels in range(24, 41):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 2:
+        B()
+        C()
+        E()
+        F()
+        G()
+        for pixels in range(18, 23):
+            pixels.fill(0, 0, 0)
+        for pixels in range(0, 5):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 3:
+        B()
+        C()
+        D()
+        E()
+        G()
+        for pixels in range(30, 35):
+            pixels.fill(0, 0, 0)
+        for pixels in range(0, 5):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 4:
+        A()
+        C()
+        D()
+        G()
+        for pixels in range(6, 11):
+            pixels.fill(0, 0, 0)
+        for pixels in range(24, 35):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 5:
+        A()
+        B()
+        D()
+        E()
+        G()
+        for pixels in range(12, 17):
+            pixels.fill(0, 0, 0)
+        for pixels in range(30, 35):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 6:
+        A()
+        B()
+        D()
+        E()
+        F()
+        G()
+        for pixels in range(12, 17):
+            pixels.fill(0, 0, 0)
+
+    if num2 == 7:
+        B()
+        C()
+        D()
+        for pixels in range(0, 5):
+            pixels.fill(0, 0, 0)
+        for pixels in range(24, 41):
+            pixels.fill(0, 0, 0)
+    if num2 == 8:
+        A()
+        B()
+        C()
+        D()
+        E()
+        F()
+        G()
+
+    if num2 == 9:
+        A()
+        B()
+        C()
+        D()
+        E()
+        G()
+        for pixels in range(30, 41):
+            pixels.fill(0, 0, 0)
+
+    time.sleep(0.25)
+
+    return 0
